@@ -84,10 +84,11 @@
                 <CheckBox x:Name="checkBoxNoMdl" Content="Models" HorizontalAlignment="Left" Margin="228,68,0,0" VerticalAlignment="Top" ToolTip="Disable model conversion to OWMDL."/>
                 <CheckBox x:Name="checkBoxNoAni" Content="Animations" HorizontalAlignment="Left" Margin="292,68,0,0" VerticalAlignment="Top" ToolTip="Disable animation conversion to SEANIM."/>
                 <Label Content="Extra options:" Margin="6,83,298,28"/>
-                <CheckBox x:Name="checkBoxRefpose" Content="Extract refpose" HorizontalAlignment="Left" Margin="100,89,0,0" VerticalAlignment="Top" ToolTip="Disable animation conversion to SEANIM."/>
-                <CheckBox x:Name="checkBoxDeduplicate" Content="Deduplication" HorizontalAlignment="Left" Margin="199,89,0,0" VerticalAlignment="Top" ToolTip="Removes duplicated textures from the exported data."/>
-                <Label Content="LOD=" Margin="295,83,88,28"/>
-                <TextBox x:Name="textBoxLOD" HorizontalAlignment="Left" Height="20" Margin="339,83,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="20" MaxLength="1" TextAlignment="Center"/>
+                <CheckBox x:Name="checkBoxRefpose" Content="Extract SMD refpose" HorizontalAlignment="Left" Margin="100,89,0,0" VerticalAlignment="Top" ToolTip="Disable animation conversion to SEANIM." Checked="CheckBoxRefpose_Checked"/>
+                <CheckBox x:Name="checkBoxDeduplicate" Content="Deduplicate data" HorizontalAlignment="Left" Margin="232,89,0,0" VerticalAlignment="Top" ToolTip="Removes duplicated textures from the exported data."/>
+                <CheckBox x:Name="checkBoxDisableSEAnimScale" Content="Disable SEAnim skeleton scaling" HorizontalAlignment="Left" Margin="100,105,0,0" VerticalAlignment="Top" ToolTip="Disables SEAnim skeleton scaling. Tick the box if you're going to use Blender 2.8x or Maya. If you plan to use Blender 2.79, don't tick the box. " Checked="CheckBoxDisableSEAnimScale_Checked"/>
+                <Label Content="LOD=" Margin="347,83,36,28"/>
+                <TextBox x:Name="textBoxLOD" HorizontalAlignment="Left" Height="20" Margin="389,87,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="20" MaxLength="1" TextAlignment="Center" RenderTransformOrigin="1.683,0.483"/>
                 <CheckBox x:Name="checkBoxJSONOut" Content="Output result as JSON" HorizontalAlignment="Left" Margin="262,34,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
             </Grid>
         </GroupBox>

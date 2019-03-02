@@ -367,5 +367,15 @@ namespace QuickOverTool_WPF
         {
             comboBoxTextureFmt.IsEnabled = true;
         }
+
+        private void CheckBoxRefpose_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBoxDisableSEAnimScale_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
