@@ -39,6 +39,7 @@ namespace QuickOverTool_WPF
 
             // Flags
             if (checkBoxDeduplicate.IsChecked == true) cmdLine += " -0";
+            if (checkBoxDisableSEAnimScale.IsChecked == true) cmdLine += " --scale-anims=false";
             if (checkBoxQuiet.IsChecked == true) cmdLine += " --quiet";
             if (checkBoxSkipKeys.IsChecked == true) cmdLine += " --skip-keys";
             if (checkBoxGraceful.IsChecked == true) cmdLine += " --graceful-exit";
