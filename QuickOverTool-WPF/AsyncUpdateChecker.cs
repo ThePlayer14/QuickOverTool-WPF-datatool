@@ -17,13 +17,13 @@ namespace QuickOverTool_WPF
     {
         BackgroundWorker worker1 = new BackgroundWorker();
         BackgroundWorker worker2 = new BackgroundWorker();
-        private void CheckGUIUpdate()
-        {
-            worker1.DoWork += worker_GUI;
-            worker1.RunWorkerCompleted += worker_GUICompleted;
-            worker1.WorkerReportsProgress = true;
-            worker1.RunWorkerAsync();
-        }
+        //private void CheckGUIUpdate()
+        //{
+        //    worker1.DoWork += worker_GUI;
+        //    worker1.RunWorkerCompleted += worker_GUICompleted;
+        //    worker1.WorkerReportsProgress = true;
+        //    worker1.RunWorkerAsync();
+        //}
 
         private void CheckDTUpdate()
         {
@@ -33,23 +33,23 @@ namespace QuickOverTool_WPF
             worker2.RunWorkerAsync();
         }
 
-        private void worker_GUI(object sender, DoWorkEventArgs e)
-        {
-            e.Result = Networking.GetGUIInfo();
-        }
+        //private void worker_GUI(object sender, DoWorkEventArgs e)
+        //{
+        //    e.Result = Networking.GetGUIInfo();
+        //}
 
         private void worker_DT(object sender, DoWorkEventArgs e)
         {
             e.Result = Networking.GetDTInfo();
         }
 
-        private void worker_GUICompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            string[] result = (string[])e.Result;
-            AddLog("You are using QuickDataTool " + Assembly.GetExecutingAssembly().GetName().Version
-                + "; latest version is " + result[0] + ".0");
-            AddLog("Download latest QuickDataTool here: " + result[1] + "\n");
-        }
+        //private void worker_GUICompleted(object sender, RunWorkerCompletedEventArgs e)
+        //{
+        //    string[] result = (string[])e.Result;
+        //    AddLog("You are using QuickDataTool " + Assembly.GetExecutingAssembly().GetName().Version
+        //        + "; latest version is " + result[0] + ".0");
+        //    AddLog("Download latest QuickDataTool here: " + result[1] + "\n");
+        //}
 
         private void worker_DTCompleted(object sender, RunWorkerCompletedEventArgs e)
         {

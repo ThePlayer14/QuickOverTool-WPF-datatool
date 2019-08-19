@@ -38,7 +38,7 @@ namespace QuickOverTool_WPF
             InitializeComponent();
             PopulateDict();
             ReadConfig();
-            CheckGUIUpdate();
+            //CheckGUIUpdate();
             CheckDTUpdate();
             FlushInformation();
         }

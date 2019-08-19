@@ -39,6 +39,7 @@ namespace QuickOverTool_WPF
 
             // Flags
             if (checkBoxDeduplicate.IsChecked == true) cmdLine += " -0";
+            if (checkBoxFlatten.IsChecked == true) cmdLine += " --flatten";
             if (checkBoxDisableSEAnimScale.IsChecked == true) cmdLine += " --scale-anims=false";
             if (checkBoxQuiet.IsChecked == true) cmdLine += " --quiet";
             if (checkBoxSkipKeys.IsChecked == true) cmdLine += " --skip-keys";
@@ -81,7 +82,7 @@ namespace QuickOverTool_WPF
             // Output path addition
             cmdLine += outputPath;
             // Extract queries
-            if (radioButtonExtractMode.IsChecked == true && 
+            if (radioButtonExtractMode.IsChecked == true &&
                 (e_heroUnlocks.IsSelected == true ||
                 e_npcs.IsSelected == true ||
                 e_heroVoice.IsSelected == true ||
