@@ -1,3 +1,4 @@
 # QuickDataTool
-DataTool GUI written in C# &amp; WPF - Updated for newer DataTool versions (Overwatch 1.14+).
+C# 및 WPF로 작성된 DataTool GUI -  "Overwatch" 1.14+
 
+한국 현지화

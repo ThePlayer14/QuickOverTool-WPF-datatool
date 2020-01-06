@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickDataTool-WPF", "QuickOverTool-WPF\QuickDataTool-WPF.csproj", "{CBA0F207-3DB9-44D3-9661-C6473277CCAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickDataTool-WPF_hangul", "QuickOverTool-WPF\QuickDataTool-WPF_hangul.csproj", "{CBA0F207-3DB9-44D3-9661-C6473277CCAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4691D09-D5A2-4812-874A-08A8E24C2240}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3D7A11E-1952-45EF-B55F-5E9AFC2548A0}
 	EndGlobalSection
 EndGlobal
