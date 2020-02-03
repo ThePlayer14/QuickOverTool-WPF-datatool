@@ -21,7 +21,7 @@
                         <Hyperlink NavigateUri="https://facepunch.com/showthread.php?t=1578997" RequestNavigate="Hyperlink_RequestNavigate">
                             Overwatch Modelling / DataTool thread
                         </Hyperlink>
-                        <Hyperlink NavigateUri="https://ci.appveyor.com/project/yukimono/OWLib/build/artifacts" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Hyperlink NavigateUri="https://ci.appveyor.com/project/yretenai/OWLib/build/artifacts" RequestNavigate="Hyperlink_RequestNavigate">
                             <LineBreak/>
                             <LineBreak/>Latest DataTool release (may be unstable!)
                         </Hyperlink>
