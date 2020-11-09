@@ -91,7 +91,7 @@ namespace QuickOverTool_WPF
                 version = null;
             }
             if (File.Exists(
-                Path.Combine(path, "ow.keys")))
+                Path.Combine(path, "Overwatch.keyring")))
                 keys = "ok";
             return new string[] { version, keys };
         }
