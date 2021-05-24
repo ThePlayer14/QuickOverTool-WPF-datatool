@@ -34,13 +34,13 @@ namespace QuickOverTool_WPF
                 AddLog("Output path not found; setting it to DataTool directory.");
             }
             // Language
-            string cmdLine = " --language=" + comboBoxLanguage.SelectedItem.
+            string cmdLine = " --language " + comboBoxLanguage.SelectedItem.
                 ToString().Substring(38, 4);
 
             // Flags
             if (checkBoxDeduplicate.IsChecked == true) cmdLine += " -0";
             if (checkBoxFlatten.IsChecked == true) cmdLine += " --flatten";
-            if (checkBoxDisableSEAnimScale.IsChecked == true) cmdLine += " --scale-anims=false";
+            if (checkBoxDisableSEAnimScale.IsChecked == false) cmdLine += " --scale-anims";
             if (checkBoxQuiet.IsChecked == true) cmdLine += " --quiet";
             if (checkBoxSkipKeys.IsChecked == true) cmdLine += " --skip-keys";
             if (checkBoxGraceful.IsChecked == true) cmdLine += " --graceful-exit";
@@ -49,15 +49,15 @@ namespace QuickOverTool_WPF
             if (checkBoxCDNValidate.IsChecked == true) cmdLine += " --validate-cache";
             if (checkBoxCDNIndex.IsChecked == true) cmdLine += " --cache";
             if (checkBoxCDNData.IsChecked == true) cmdLine += " --cache-data";
-            if (checkBoxNoTex.IsChecked == true) cmdLine += " --convert-textures=false";
-            if (checkBoxNoSnd.IsChecked == true) cmdLine += " --convert-sound=false";
-            if (checkBoxNoMdl.IsChecked == true) cmdLine += " --convert-models=false";
-            if (checkBoxNoAni.IsChecked == true) cmdLine += " --convert-animations=false";
-            if (checkBoxRefpose.IsChecked == true) cmdLine += " --extract-refpose=true";
-            if (textBoxLOD.Text != "0") cmdLine += " --lod=" + textBoxLOD.Text;
+            if (checkBoxNoTex.IsChecked == true) cmdLine += " --raw-textures";
+            if (checkBoxNoSnd.IsChecked == true) cmdLine += " --raw-sound";
+            if (checkBoxNoMdl.IsChecked == true) cmdLine += " --raw-models";
+            if (checkBoxNoAni.IsChecked == true) cmdLine += " --raw-animations";
+            if (checkBoxRefpose.IsChecked == true) cmdLine += " --extract-refpose";
+            if (textBoxLOD.Text != "0") cmdLine += " --lod " + textBoxLOD.Text;
             if (checkBoxJSONOut.IsChecked == true) cmdLine += " --json";
             if (checkBoxNoTex.IsChecked == false)
-                cmdLine += (" --convert-textures-type=" + comboBoxTextureFmt.SelectedItem. // Texture conversion type
+                cmdLine += (" --convert-textures-type " + comboBoxTextureFmt.SelectedItem. // Texture conversion type
                     ToString().Substring(38, 3));
 
             // Overwatch path
